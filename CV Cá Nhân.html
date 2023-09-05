@@ -10,6 +10,7 @@
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <script src="js/cvCaNhan.js"></script>
 </head>
 <body>
       <div class="menutop">
@@ -26,16 +27,16 @@
                   <a class="nav-link active" aria-current="page" href="#">Giới Thiệu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Kinh Nghiệm</a>
+                  <a class="nav-link " href="#" onclick="scrollToSection('kn')"><p id="kn">Kinh Nghiệm</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sản Phẩm</a>
+                  <a class="nav-link " href="#" onclick="scrollToSection1('sp')"><p id="sp">Sản Phẩm</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Thông Tin Liên Hệ</a>
+                  <a class="nav-link" href="#" onclick="scrollToSection2('tHLH')"><p id="tTHL">Thông Tin Liên Hệ</p></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Comment</a>
+                  <a class="nav-link " href="#" onclick="scrollToSection3('cM')"><p id="cM">Comment</p></a>
                 </li>
               </ul>
             </div>
@@ -44,15 +45,88 @@
     </div>
 <!--      hết phần menu-->
       <div class="khoi1">
-            <div class="container text-center">
-              <img src="./img/avatar.jpg" alt="">
-              <h2>Trương Xuân Trường</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quod.</p>
-              <a href="" class="btn btn-primary">
-                Hợp Tác
-              </a>
-            </div>
+        <div class="container text-center">
+          <div class="tt">
+            <img src="./img/avatar.jpg" alt="">
+            <h2>Trương Xuân Trường</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, quod.</p>
+            <a href="" class="btn btn-primary">
+              Hợp Tác
+            </a>
+          </div>
+          <div class="xuong">
+
+          </div>
+        </div>
       </div>
 <!--hết phần khối -->
+
+      <div class="edu">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 tieude text-center">
+              <h1> Kinh Nghiệm & Quá Trình Học</h1>
+            </div>
+            <div class="col-sm-4 cot1_3">
+              <h2 class="tieudecap2 text-sm-end "> Quá Trình <span class="dam">Học</span></h2>
+              <div class="khoiTtNho text-sm-end">
+                <h3 class="tieudecap3"> Học Tiểu Học </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+              <div class="khoiTtNho text-sm-end">
+                <h3 class="tieudecap3"> Học Trung Học </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+              <div class="khoiTtNho text-sm-end ">
+                <h3 class="tieudecap3"> Học Trung Học Phổ Thông </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+            </div>
+<!--            hết cột 4 đến 1-->
+              <div class="col-sm-4 cot3_3">
+                <img src="./img/tieude.jpg" alt="">
+              </div>
+            <div class="col-sm-4 cot1_3">
+              <h2 class="tieudecap2 text-sm-start"> Quá Trình <span class="dam">Làm Việc</span></h2>
+              <div class="khoiTtNho text-sm-start">
+                <h3 class="tieudecap3"> Làm Thiết Kế Giao Diện </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+              <div class="khoiTtNho text-sm-start">
+                <h3 class="tieudecap3"> Làm Thiết Kế Giao Diện </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+              <div class="khoiTtNho text-sm-start ">
+                <h3 class="tieudecap3"> Làm Thiết Kế Giao Diện </h3>
+                <span class="motaqt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Dolores dolorum ducimus fuga in necessitatibus nemo nostrum quos repellat. Fuga, maxime!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
